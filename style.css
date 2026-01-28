@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body{
+     font-family: "Yellowtail", cursive;
+     text-align: center;
+     
+     background-image:radial-gradient(#640d14, #38040e, #640d14); 
+     color: #fffdfb;
+     margin:0;
+     
+}
+
+.header_bar{
+    background-image: conic-gradient(#800e13, #e01e37,#800e13);
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.163);
+    margin: 0;
+    margin-bottom: 40px;
+    
+    padding: 10px;
+    align-items: center;
+    border-bottom-left-radius:10%;
+     border-bottom-right-radius:10%;
+}
+
+.header_bar h1{
+    background-color: #ffffff00;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding:0;
+    color: #ffffff;
+    transition: 1s;
+}
+
+
+.header_bar h1:hover{
+    font-size: 80px;
+    transition: 1s;
+}
+
+
+.title{
+    margin-top: 0;
+}
+
+.title h2{
+    font-size: 30px;
+
+}
+
+iframe{
+    height: 100%;
+}
+.embedFrame{
+    width:50%;
+    height: 700px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.assetGIF img{
+    height: 200px;
+    margin: 40px;
+}
+
+.poemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+    transition: 1s;
+
+}
+
+.stars{
+    background-image: url(img/stars.png);
+    position: absolute;
+    background-repeat: repeat;
+    z-index: -1;
+    height: 3306.92px   ;
+    width:100%;
+}
+
+.poemContainer .poem {
+     margin-left: 50px;
+    
+}
+
+footer{
+    height: 75px;
+    width: 100%;
+    display: block;
+    background-color: #38040e;
+}
+
+/*album container*/
+
+.albumcontainer{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+
+.albumcontainer img{
+    max-width: 200px;
+    max-height: auto;
+    margin: 50px;
+    transition: 1s;
+}
+.albumcontainer img:hover{
+    max-width: 290px;
+    max-height: auto;
+    margin: 10px;
+    transition: 1s;
+}
