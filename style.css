@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Phudu:wght@300..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+html{
+    height: 100%;
+}
+.hidden{
+    display: none;
+}
 body{
      font-family: "Yellowtail", cursive;
      text-align: center;
-     
-     background-image:radial-gradient(#640d14, #38040e, #640d14); 
+     background-color: #7b0d1e;
      color: #fffdfb;
+
      margin:0;
+     height: 100%;
      
 }
 
 .header_bar{
-    background-image: conic-gradient(#800e13, #e01e37,#800e13);
+    background-color: #420c14;
     box-shadow: 3px 5px rgba(0, 0, 0, 0.163);
     margin: 0;
     margin-bottom: 40px;
@@ -83,7 +90,7 @@ iframe{
     position: absolute;
     background-repeat: repeat;
     z-index: -1;
-    height: 3306.92px   ;
+    height: 100%;
     width:100%;
 }
 
@@ -123,4 +130,43 @@ footer{
     max-height: auto;
     margin: 10px;
     transition: 1s;
+}
+
+#counting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    transition: 1s;
+        
+}
+
+#text{
+    font-size: 30px;
+    transition: 300ms;
+}
+
+
+#text:hover{
+    font-size: 40px;
+    transition: 300ms;
+}
+
+#counter{
+    font-family: "Leckerli One", cursive;
+    font-size: 100px;
+    transition: 300ms;
+    margin: 50px;
+}
+
+#counter:hover{
+    font-family: "Leckerli One", cursive;
+    font-size: 150px;
+    transition: 500ms;
+}
+
+.assetGIFX img{
+    height: 100px;
+    margin: 40px;
 }
