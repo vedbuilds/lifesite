@@ -5,7 +5,7 @@ let dateOne =new Date();
 
 let finalDate = new Date('2026-02-05T00:00:00');
 
-if(true){
+if(dateOne > finalDate){
     document.querySelector("#main-site").classList.remove("hidden");
     document.querySelector("#counting").style.display="none";
 }else{
@@ -31,4 +31,5 @@ document.querySelector("#counter").innerHTML = days + " : " +hours + " : " + min
 updateClock();
 
 setInterval(updateClock,1000);
+
 
