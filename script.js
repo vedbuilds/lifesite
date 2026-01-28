@@ -5,7 +5,7 @@ let dateOne =new Date();
 
 let finalDate = new Date('2026-02-05T00:00:00');
 
-if(dateOne > finalDate){
+if(true){
     document.querySelector("#main-site").classList.remove("hidden");
     document.querySelector("#counting").style.display="none";
 }else{
