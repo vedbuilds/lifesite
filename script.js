@@ -28,8 +28,29 @@ document.querySelector("#counter").innerHTML = days + " : " +hours + " : " + min
 
 };
 
+function keystrokes(){
+    document.addEventListener("keydown", function(event) {
+        let keyPressed = event.key;
+        console.log(keyPressed);
+        if(keyPressed == 's'){
+            //alert("S");
+            document.querySelector("#imgElementX").setAttribute("src","img/star.gif"); 
+            document.querySelector("#imgElementY").setAttribute("src","img/star.gif"); 
+        }else if(keyPressed=='w'){
+            document.querySelector("#imgElementY").setAttribute("src","img/asset2.gif"); 
+            document.querySelector("#imgElementX").setAttribute("src","img/asset2.gif"); 
+        }else if(keyPressed == 'a'){
+            document.querySelector("#imgElementX").setAttribute("src","img/nina.gif"); 
+            document.querySelector("#imgElementY").setAttribute("src","img/nina.gif"); 
+        }else if(keyPressed == 'd'){
+            document.querySelector("#imgElementX").setAttribute("src","img/assetSquiggle.gif"); 
+            document.querySelector("#imgElementY").setAttribute("src","img/assetSquiggle.gif"); 
+        }
+    });
+}
+
+keystrokes();
 updateClock();
 
-setInterval(updateClock,1000);
-
+setInterval(updateClock,keystrokes,1000);
 
