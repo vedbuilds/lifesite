@@ -24,7 +24,7 @@ const secs = Math.floor(((diff % (1000*60))/ (1000)));
 
 
 
-document.querySelector("#counter").innerHTML = days + " : " +hours + " : " + mins + " : " +secs ;
+document.querySelector("#counter").innerHTML = hours + " : " + mins + " : " +secs ;
 
 };
 
@@ -53,4 +53,5 @@ keystrokes();
 updateClock();
 
 setInterval(updateClock,keystrokes,1000);
+
 
